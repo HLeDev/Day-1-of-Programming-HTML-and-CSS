@@ -1,0 +1,272 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@0;1&display=swap');
+
+/*Set margine for entire screen*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*Set background color of site*/
+body {
+    background: linear-gradient(to right, #3525af, #9153c9);
+}
+
+/*edit resume class*/
+.resume {
+    width: 105rem;
+    background: #fff;
+    margin: 2rem auto;
+    display: flex;
+}
+
+/*edit left class*/
+.left {
+    background: #292b2f;
+    width: 23.5rem;
+    padding: 0 1.25rem;
+}
+
+/*edit right class*/
+.right {
+    width: calc(100% - 15rem);
+}
+
+/*edit left image holder*/
+.left .img_holder {
+    text-align: center;
+    padding: 1.25rem 1rem;
+}
+
+/*edit left image*/
+.left .img_holder img {
+    width: 14rem;
+    border-radius: 1rem 0;
+}
+
+/*edit fontside in about me*/
+.AboutMe .li_wrap .text{
+    font-size: 1rem;
+}
+
+/*create padding for bottom of content*/
+.pb {
+    padding-bottom: 1.5rem;
+}
+
+/*edit contents in title clas*/
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    padding-bottom: .5rem;
+    color: #3525af;
+    position: relative;
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+/*creating pad lines*/
+.title:before {
+    content: "";
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    width: 11rem;
+    height: .25rem;
+    background: #3525af;
+    }
+
+/*adjusting icon in left class*/
+.left .icon {
+    font-size: 1.5rem;
+    color: #9153c9;
+}
+
+/*adjust text in left class*/
+.left .text {
+    color: #9153c9;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+/*edit list items in wrap*/
+.contact .li_wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/*edit icons in list item wrap*/
+.contact .li_wrap .icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: #fff;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+/*edit text in list item wrap*/
+.contact .li_wrap .text {
+    width: calc(100% - 4.1rem);
+    word-break: break-word;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/*edit certs text*/
+.certs .li_wrap .text{
+    width: calc(100% - 4.1rem);
+    word-break: break-word;
+    color: rebeccapurple;
+}
+
+/*edit skills and hobbies in unorderred list*/
+.skills ul,
+.hobbies ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*edit list items in skills and hobbies*/
+.skills .li_wrap,
+.hobbies .li_wrap {
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*create a hover animation over icon*/
+.skills .li_wrap:hover {
+    border: .2rem solid #ff6a00;
+}
+
+/*edit texts*/
+.skills .li_wrap .text,
+.hobbies .li_wrap .text,
+.certs .li.li_wrap .text{
+     margin-top: .5rem;
+     font-size: 1rem;
+
+}
+/*create a hover animation over icon*/
+.hobbies .li_wrap:hover {
+    border: .2rem solid #fff;
+}
+
+/*change font color of hobbies*/
+.hobbies .li_wrap .icon,
+.hobbies .li_wrap .text {
+    color: #fff;
+}
+
+/*edit header*/
+.header{
+    background: #292b2f;
+    padding: 1rem 2rem;
+    color: #fff;
+    height: 17.4rem;
+}
+
+/*edit name on header*/
+.header .name{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #3525af;
+}
+
+/*edit role*/
+.header .role{
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+/*edit about*/
+.header .about{
+    margin-top: 1.25rem;
+    line-height: 1.5rem;
+}
+
+/*edit padding and color in inner right side*/
+.right_inner{
+    padding: 2rem;
+    color: #292b2f;
+}
+
+/*edit display and margin for list items wrapped in right inner*/
+.right_inner .li_wrap{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+/*edit dates are and color*/
+.right_inner .li_wrap .date{
+    width: 7rem;
+    color: #9153c9;
+}
+
+/*edit information class*/
+.right_inner .li_wrap .info{
+    width: calc(100% - 8rem);
+    padding-left: 2rem;
+    position: relative;
+}
+/*edit information title texts*/
+.right_inner .li_wrap .info_title{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    color: #9153c9;
+}
+/*edit company texts*/
+.right_inner .li_wrap .info_company{
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: .25rem;
+
+}
+/*edit contents margins*/
+.right_inner .li_wrap .info_content{
+    margin-top: .25rem;
+}
+
+/*create a bubble between dates and informations*/
+.right_inner .li_wrap .info:before{
+    content: "";
+    position: absolute;
+    top: .1rem;
+    left: 0;
+    width: .8rem;
+    height: .8rem;
+    background: #9153c9;
+    border-radius: 50%;
+}
+/*drag bubble down in a straight line*/
+.right_inner .li_wrap .info:after {
+    content: "";
+    position: absolute;
+    top: .8rem;
+    left: .2rem;
+    width: .1rem;
+    height: 90%;
+    background: #9153c9;
+    border-radius: 50%;
+}
+/*edit margin in bullets*/
+.right_inner .li_wrap .info_bullets{
+    margin-top: .1rem;
+}
