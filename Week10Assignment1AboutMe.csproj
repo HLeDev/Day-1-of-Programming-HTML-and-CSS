@@ -78,11 +78,13 @@
     <Content Include="Images\HTML.png" />
     <Content Include="Images\HungProfile1.jpg" />
     <Content Include="Images\LinkedIn.png" />
+    <Content Include="Images\Location.png" />
     <Content Include="Images\Phone.png" />
     <Content Include="Images\Tennis.png" />
     <Content Include="Images\Travel.png" />
     <Content Include="Images\TSQL.png" />
     <Content Include="Index.html" />
+    <Content Include="Music Videos\BTS %28방탄소년단%29 - I Need You piano cover %28short and simple ver.%29 with sheet music.mp4" />
     <Content Include="Styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>

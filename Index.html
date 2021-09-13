@@ -4,13 +4,29 @@
     <meta charset="UTF-8">
     <title>Hung's Resume</title>
     <link rel="stylesheet" href="Styles.css">
+
+    <script>
+        function showPosition() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    var posInfo = "Current Position is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude + ")";
+                    document.getElementById("pos").innerHTML = posInfo;
+                });
+            }
+            else {
+                alert("Sorry, current browser does not support GeoLocation")
+            }
+        }
+    </script>
 </head>
 
 <body>
+    
     <!--create a wrapper for content-->
     <div class="wrapper">
         <!--create a master class for resume purposes-->
         <div class="resume">
+            
             <!--Create a class for content on the left side-->
             <div class="left">
                 <!--insert profile prics under an image holder-->
@@ -33,7 +49,7 @@
                                         I won 4 Tae Kwon Do tournaments during my teenage years.<br />
                                         I am a programmer on the weekday, tennis player on the weekend, and gamer at night.<br /><br />
 
-                                        My Favorite Quote by Albert Einstein: <br/> <br />
+                                        My Favorite Quote by Albert Einstein: <br /> <br />
 
                                         <em>"Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid."</em>
 
@@ -203,6 +219,32 @@
                         </ul>
                     </div>
                 </div>
+
+                <!--Add Music Video-->
+                <div class="Music">
+                    <ul>
+                        <li>
+                            <div class="li_wrap">
+                                <div class="MVs">
+                                    <video id="vid" src="Music Videos/BTS (방탄소년단) - I Need You piano cover (short and simple ver.) with sheet music.mp4" width="100" height="70" loop="loop" controls="controls" autoplay="autoplay"></video>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--Add Geolocation-->
+                <div class="location">
+                    <ul>
+                        <li>
+                            <div class="li_wrap">
+                                <div class="icon">
+                                    <img src="Images/Location.png" alt="Locations" height="45" width="45" onclick="showPosition()"/>
+                                </div>
+                                <div class="text" id="pos"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <!--Create a class for contents on the right side-->
@@ -216,11 +258,14 @@
                         <div class="role">
                             Software Developer
                         </div>
+
                     </div>
                     <!--create a summary-->
                     <div class="about">
-                        Active-duty Marine completing twelve years of honorable service.  A result-oriented leader with skills in personnel management and development, as well as a strong understanding of Communications Security.  Enthusiastic, responsible, and hard-working individual, eager to learn and grow in an organization utilizing current knowledge of software design and development with technical and programming skills to thrive as a Software Developer.
+                        Active-duty Marine completing twelve years of honorable service.  A result-oriented leader with skills in personnel management and development, as well as a strong understanding of Communications Security.  Enthusiastic, responsible, and hard-working individual, eager to learn and grow in an organization utilizing current knowledge of software design and development with technical and programming skills to thrive as a Software Developer. <br />
+
                     </div>
+
                 </div>
 
                 <!--create a class for right side lower portion-->

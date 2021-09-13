@@ -9,6 +9,8 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+
+
 /*Set background color of site*/
 body {
     background: linear-gradient(to right, #3525af, #9153c9);
@@ -175,6 +177,26 @@ body {
 .hobbies .li_wrap .text {
     color: #fff;
 }
+
+.Musics {
+    margin: 2rem auto;
+    display: flex;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*edit header*/
 .header{
